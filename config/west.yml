@@ -6,10 +6,8 @@ manifest:
       url-base: https://github.com/ktkhshi/pinkeybd-firmware
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
-    ##- name: inorichi
-    ##  url-base: https://github.com/inorichi
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: ktkhshi
+      url-base: https://github.com/ktkhshi
   projects:
     - name: zmk
       remote: zmkfirmware
