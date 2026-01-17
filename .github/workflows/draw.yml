@@ -23,4 +23,4 @@ jobs:
       config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
       output_folder: "keymap-drawer"
       destination: "both"
-      token: ${{ github.repository.secrets.GH_PAT }} # ここを追加
+      token: ${{ secrets.GH_PAT }} # ここを追加
