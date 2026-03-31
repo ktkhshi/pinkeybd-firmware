@@ -3,6 +3,9 @@ if SHIELD_PINKEYBD_RIGHT
     config ZMK_KEYBOARD_NAME
         default "Pinkeybd"
 
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+
     config INPUT
         bool
         default y
