@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/ktkhshi
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3.0
+      remote: cormoran
+      revision: v0.3-branch+dya
       import: app/west.yml
     - name: zephyr
       remote: zmkfirmware
@@ -47,6 +47,18 @@ manifest:
       remote: zmkfirmware
     - name: zmk-pmw3610-driver
       remote: ktkhshi
+      revision: main
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: main
+    - name: zmk-module-battery-history
+      remote: cormoran
+      revision: main
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
       revision: main
   self:
     west-commands: scripts/west-commands.yml
