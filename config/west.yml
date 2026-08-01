@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: ktkhshi
       url-base: https://github.com/ktkhshi
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: zmk
       remote: cormoran
