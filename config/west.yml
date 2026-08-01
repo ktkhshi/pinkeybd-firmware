@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/ktkhshi
     - name: cormoran
       url-base: https://github.com/cormoran
-    - name: caksoylar // 追記
+    - name: caksoylar
       url-base: https://github.com/caksoylar      
   projects:
     - name: zmk
@@ -64,7 +64,7 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: main
-    - name: zmk-rgbled-widget // 追記
+    - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
   self:
