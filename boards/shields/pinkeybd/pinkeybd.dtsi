@@ -54,16 +54,6 @@
     };
 };
 
-/ {
-    trackball_listener: trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&mouse_runtime_input_processor>;
-
-        /* スクロールレイヤー: 指定レイヤーでカーソル移動をスクロールに変換 */
-        scroller {
-            layers = <3>;
-            input-processors = <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>;
-        };
-    };
+&uicr {
+    nfct-pins-as-gpios;
 };

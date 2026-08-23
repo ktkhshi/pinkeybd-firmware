@@ -51,8 +51,8 @@ manifest:
     - name: zmk-feature-fast-keymap
       remote: cormoran
       revision: main
-    - name: zmk-pmw3610-driver
-      remote: ktkhshi
+    - name: zmk-driver-pmw3610-with-custom-studio-rpc
+      remote: cormoran
       revision: main
     - name: zmk-module-ble-management
       remote: cormoran

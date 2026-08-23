@@ -42,7 +42,7 @@
 
     trackball: trackball@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";
+        compatible = "cormoran,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT
@@ -54,9 +54,16 @@
 };
 
 / {
-    trackball_listener {
-        status="okay";
+    trackball_listener: trackball_listener {
+        status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&mouse_runtime_input_processor>;
+
+        /* スクロールレイヤー: 指定レイヤーでカーソル移動をスクロールに変換 */
+        scroller {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>;
+        };
     };
 };
