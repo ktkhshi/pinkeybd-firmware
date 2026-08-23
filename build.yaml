@@ -6,11 +6,11 @@
 # distinguish build outputs from each other:
 ---
 include:
- - board: seeeduino_xiao_ble
+ - board: xiao_ble//zmk
    shield: "pinkeybd_right rgbled_adapter"
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
- - board: seeeduino_xiao_ble
+ - board: xiao_ble//zmk
    shield: "pinkeybd_left rgbled_adapter"
- - board: seeeduino_xiao_ble
+ - board: xiao_ble//zmk
    shield: settings_reset
