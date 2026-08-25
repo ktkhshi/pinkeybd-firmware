@@ -48,9 +48,9 @@ manifest:
     - name: zmk-feature-custom-settings
       remote: cormoran
       revision: main
-    - name: zmk-feature-fast-keymap
-      remote: cormoran
-      revision: main
+    # - name: zmk-feature-fast-keymap
+    #   remote: cormoran
+    #   revision: main
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
       remote: cormoran
       revision: main
